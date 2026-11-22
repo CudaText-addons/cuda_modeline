@@ -75,7 +75,7 @@ def find_modeline(ed, filename, start, limit):
     return False
 
 def do_find_modeline(ed):
-    filename = ed.get_filename()
+    filename = ed.get_prop(PROP_FN, '')
     if not filename:
         return
 
